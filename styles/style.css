@@ -48,16 +48,26 @@ input[type=submit], button{
 }
 
 .update{
-    background-color: rgb(98, 235, 114);
+    background-color: rgb(98, 235, 114);    
+}
+
+.update::before{
+    content: "Update";
 }
 
 .delete{
     background-color: rgb(235, 98, 98);
 }
 
+.delete::before{
+    content: "Delete";
+}
+
 
 .books{
-    padding: 50px;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .book{
@@ -70,6 +80,7 @@ input[type=submit], button{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: 20px;
     
 }
 
@@ -95,7 +106,7 @@ input[type=submit], button{
 }
 
 .readed::before{
-    content: "Readed?";
+    content: "Readed? ";
 }
 
 

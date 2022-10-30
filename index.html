@@ -22,27 +22,27 @@
       </header>
       <main id="main">
         <div class="form">
-          <form action="">
+          <form id="form" action="">
             <input id="title" type="text" placeholder="Title" />
             <input id="author" type="text" placeholder="Author" />
             <input id="pages" type="number" placeholder="Pages" />
-            <input id="readed" type="checkbox" role="switch" />
+            <input id="readed" type="checkbox" />
             <label for="readed">Readed</label>
             <input id="submit" class="add" type="submit" value="Add" />
           </form>
         </div>
-        <div id="books" class="books">
+        <div id="books-container" class="books">
           <div class="book">
             <div class="book-info">
               <p class="title"></p>
               <p class="author"></p>
               <p class="pages"></p>
-              <p class="readed"><span>No</span></p>
+              <p class="readed"></p>
             </div>
 
             <div class="buttons">
-              <button class="update">Update</button>
-              <button class="delete">Delete</button>
+              <button class="update"></button>
+              <button class="delete"></button>
             </div>
           </div>
         </div>
