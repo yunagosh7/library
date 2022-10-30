@@ -31,6 +31,10 @@ const readed = document.getElementById("readed");
 const title = document.getElementById("title");
 const submit = document.getElementById("submit");
 const booksContainer = document.getElementById("books-container");
+const btnsUpdate = document.querySelectorAll(".update");
+const btnsRemove = document.getElementById("delete")
+
+
 form.addEventListener("submit", (e) => e.preventDefault());
 
 const addBook = (title, author, pages, readed) => {
@@ -106,9 +110,9 @@ const createBook = (book) => {
 };
 
 books.map((bk) => {
-    const bok = createBook(bk);
-    booksContainer.appendChild(bok);
-  })
+  const bok = createBook(bk);
+  booksContainer.appendChild(bok);
+});
 
 submit.addEventListener("click", () => {
   const book = {
@@ -119,7 +123,7 @@ submit.addEventListener("click", () => {
   };
   books.push(book);
   const bk = createBook(book);
-  booksContainer.appendChild(bk)
+  booksContainer.appendChild(bk);
   console.log();
   title.value = "";
   author.value = "";
@@ -127,3 +131,6 @@ submit.addEventListener("click", () => {
   readed.checked = false;
   console.log(books);
 });
+
+
+console.log(btnsUpdate)
