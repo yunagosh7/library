@@ -22,8 +22,14 @@ booksContainer.addEventListener("click",e=>{
 
 
 add.addEventListener("click",()=>{
-  let book = new BookClass(title.value,author.value ,pages.value ,readed.checked );
-  let id = createBook(book);
+  if(title.value != "" && author.value != "" && pages.value != ""){
+    let book = new BookClass(title.value,author.value ,pages.value ,readed.checked );
+    let id = createBook(book);
+    title.value = "";
+    author.value = "";
+    pages.value = "";
+    readed.checked = false;
+  }
 })
 
 
